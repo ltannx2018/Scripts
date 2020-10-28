@@ -15,11 +15,11 @@ jobs:
     if: github.event.repository.owner.id == github.event.sender.id
     env:
       YOUTH_READ: ${{ secrets.YOUTH_READ }}
-      y01: ${{ secrets.y01 }}
-      yout: ${{ secrets.youth }}
-      youth_read_1: ${{ secrets.youth_read_1 }}
-      youth_read_2: ${{ secrets.youth_read_2 }}
-      youth_read_3: ${{ secrets.youth_read_3 }}  
+      Y01: ${{ secrets.Y01 }}
+      YOUTH: ${{ secrets.YOUTH }}
+      YOUTH_READ_1: ${{ secrets.YOUTH_READ_1 }}
+      YOUTH_READ_2: ${{ secrets.YOUTH_READ_2 }}
+      YOUTH_READ_3: ${{ secrets.YOUTH_READ_3 }}  
     steps:
       - uses: actions/checkout@v1
       - name: Use Node.js 14.x
@@ -38,36 +38,36 @@ jobs:
           YOUTH_READ: ${{ secrets.YOUTH_READ }}
 
       - name: '运行 【中青看点自动阅读二】'
-        if: env.y01
+        if: env.Y01
         run: |
           node Task/Youth_Read.js
         env:
-          YOUTH_READ: ${{ secrets.y01 }}
+          YOUTH_READ: ${{ secrets.Y01 }}
           
       - name: '运行 【中青看点自动阅读三】'
-        if: env.youth
+        if: env.YOUTH
         run: |
           node Task/Youth_Read.js
         env:
-          YOUTH_READ: ${{ secrets.youth }}
+          YOUTH_READ: ${{ secrets.YOUTH }}
           
       - name: '运行 【中青看点自动阅读四】'
-        if: env.youth_read_1
+        if: env.YOUTH_READ_1
         run: |
           node Task/Youth_Read.js
         env:
-          YOUTH_READ: ${{ secrets.YOUTH_READ4 }}
+          YOUTH_READ: ${{ secrets.YOUTH_READ_1 }}
           
       - name: '运行 【中青看点自动阅读五】'
-        if: env.youth_read_2
+        if: env.YOUTH_READ_2
         run: |
           node Task/Youth_Read.js
         env:
-          YOUTH_READ: ${{ secrets.youth_read_2 }}
+          YOUTH_READ: ${{ secrets.YOUTH_READ_2 }}
              
       - name: '运行 【中青看点自动阅读六】'
-        if: env.youth_read_3
+        if: env.YOUTH_READ_3
         run: |
           node Task/Youth_Read.js
         env:
-          YOUTH_READ: ${{ secrets.youth_read_3 }}:  
+          YOUTH_READ: ${{ secrets.YOUTH_READ_3 }}:  

@@ -15,11 +15,11 @@ jobs:
     if: github.event.repository.owner.id == github.event.sender.id
     env:
       YOUTH_READ: ${{ secrets.YOUTH_READ }}
-      YOUTH_READ2: ${{ secrets.y01 }}
-      YOUTH_READ3: ${{ secrets.youth }}
-      YOUTH_READ4: ${{ secrets.youth_read_1 }}
-      YOUTH_READ5: ${{ secrets.youth_read_2 }}
-      YOUTH_READ6: ${{ secrets.youth_read_3 }}  
+      y01: ${{ secrets.y01 }}
+      yout: ${{ secrets.youth }}
+      youth_read_1: ${{ secrets.youth_read_1 }}
+      youth_read_2: ${{ secrets.youth_read_2 }}
+      youth_read_3: ${{ secrets.youth_read_3 }}  
     steps:
       - uses: actions/checkout@v1
       - name: Use Node.js 14.x

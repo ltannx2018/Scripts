@@ -70,4 +70,4 @@ jobs:
         run: |
           node Task/Youth_Read.js
         env:
-          YOUTH_READ: ${{ secrets.YOUTH_READ_3 }}:  
+          YOUTH_READ: ${{ secrets.YOUTH_READ_3 }}

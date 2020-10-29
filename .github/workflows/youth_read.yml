@@ -15,7 +15,7 @@ jobs:
     if: github.event.repository.owner.id == github.event.sender.id
     env:
       Y01: ${{ secrets.Y01 }}
-      y01: ${{ secrets.y01 }}
+      YOUTH_READ: ${{ secrets.YOUTH_READ }}
       youth: ${{ secrets.youth }}
       youth_read_1: ${{ secrets.youth_read_1 }}
       youth_read_2: ${{ secrets.youth_read_2 }}

@@ -20,7 +20,7 @@
  **您必须在下载后的2个小时内计算机或手机中完全删除以上的内容.**  </br>
 > ***您使用或者复制了本仓且本人制作的任何脚本，则视为`已接受`此免责声明，要仔细阅读 ****
 
-#### 开发者不易,请赏杯茶水了
+#### 开发者不易,请赏杯茶水了 
 <div align=center><img width="200" height="200" src="https://gitee.com/Sunert/QuantX/raw/master/Rules/Images/Complimentcode.jpeg"/></div>
 
 
